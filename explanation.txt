@@ -1,0 +1,20 @@
+Backend ----------
+
+1. create the project in venv (like in ./backend/ directory)
+2. pip install pyinstaller
+3. pyinstaller --name backend --onefile main.py (to create build & dist folder)
+4. the main.exe in dist folder has all the python code
+
+Frontend ----------
+
+1. npm install -g pkg
+2. create server.js 
+3. update package.json (to contain "pkg" attribute)
+4. npm run build (to create build folder)
+5. pkg server.js --output frontend.exe
+6. ensure that frontend.exe & build folder have the same parent directory
+
+Send to client ----------
+
+1. We only need to send ./backend_client/ & ./frontend_client/ folder to client
+2. As it contains only exe & build files, code is hidden sufficiently
